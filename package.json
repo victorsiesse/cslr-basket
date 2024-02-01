@@ -9,6 +9,8 @@
   "author": "Victor Siesse",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.9"
   }
 }
