@@ -1,0 +1,14 @@
+{
+  "name": "cslr-basket",
+  "version": "1.0.0",
+  "description": "cslr website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Siesse",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
