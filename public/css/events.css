@@ -1,0 +1,18 @@
+#work-in-progress {
+    display: block;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+    height: calc(100vh - 26.5rem);
+}
+
+@media only screen and (max-width: 480px) {
+    #work-in-progress {
+        margin: auto;
+        height: auto;
+    }
+
+    #work-in-progress h1 {
+        font-size: 1.5rem;
+    }
+} 
