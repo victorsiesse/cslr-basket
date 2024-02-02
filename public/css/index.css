@@ -104,6 +104,10 @@
         width: 100%;
     }
 
+    .presentation-container .content {
+        width: 100%;
+    }
+
     #gallery {
         padding: 2rem 1rem;
     }
