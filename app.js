@@ -52,6 +52,35 @@ app.post('/contact', (req, res) => {
     });
  });
 
+ app.post('/commande', (req, res) => {
+  const { prenom, nom, mail, sujet, modele,taille, couleur} = req.body;
+
+  const mailOptions = {
+    from: 'cslrbasket.noreply@gmail.com',
+    to: 'cslrbasket.commande@gmail.com', 
+    subject: `Message de ${prenom} ${nom}: Commande`,
+
+    text: `
+    Nom: ${prenom} ${nom}
+    Adresse mail: ${mail}
+    
+    Modele : ${modele}
+    Taille : ${taille}
+    Couleur : ${couleur}
+  `
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.error(error.message);
+        res.json({ success: false, message: "Une erreur s'est produite lors de l'envoi de la commande" });
+      } else {
+        console.log('Message sent: %s', info.messageId);
+        res.json({ success: true, message: 'Votre commande a bien été envoyé.' });
+      }
+  });
+});
+
 app.listen(port, () => {
   console.log(`Serveur en cours d'exécution sur le port ${port}`);
 });

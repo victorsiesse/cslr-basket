@@ -1,150 +1,46 @@
-main {
-    background-color: #fff2ff;
-    color: rgb(46, 1, 88);
-}
-
-h2 {
-    padding-left: 4rem;
-    padding-bottom: 1rem;
-}
-
-.actu-events,.presentation, .match-actuality, .gallery {
-    padding: 1rem 0;
-}
-
-.header, .actu-events, .match-actuality  {
-    background-color: #fff2ff;
-}
-
-.presentation, .gallery {
-    background-color: #FFD700;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-}
-
-.header img {
-    margin-right: 1rem;
-}
-
-.container  {
-    display: flex;
-    padding: 1rem 5rem;
-    justify-content: space-around;
-}
-
-.box  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-    width: 25rem;
-    padding: 1rem 0;
-}
-
-.match-actuality .box {
-    background-color: blueviolet;
-    color: white;
-}
-
-.actu-events .box {
-    box-shadow: 0 0 10px rgba(51, 8, 65, 0.5);
-    padding: 0 1.5rem;
-}
-
-.label {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.label h3 {
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.line {
-    height: 2px;
-    width: 45px;
-    background-color: black;
-}
-
-
-.match-actuality .line {
-    background-color: white;
-}
-
-.item {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.item .image-container {
-    height: 7rem;
-    width: auto;
-   
-}
-
-.item .image-container img {
-    border-radius: 15px;
-    display: block;
-    height: 100%;
-    width: auto;
-}
-
-.content ul {
-    list-style: none;
+  #presentation {
     text-align: center;
-}
-.content li {
-    font-size: 1.25rem;
-}
-
-
-.match-actuality .content h4 {
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
-.match-actuality .content p {
-    font-size: 1rem;
-    line-height: 1.6;
+    padding: 2rem 5rem;
+    background-color: #E7CEF3;
 }
 
 .presentation-container {
     display: flex;
-    justify-content: space-evenly;
-    padding: 1rem 5rem;
+    margin: 2rem;
+    margin-bottom: 0;
+    gap: 4rem;
 }
 
-.presentation-container .image-container  {
-    width: 40%;
+.presentation-container img {
     height: auto;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.presentation-container .image-container img {
-    border-radius: 15px;
-    max-width: 100%;
-    height: auto;
+.presentation-container .content {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.presentation .content {
-    padding: 1rem ;
-    width: 40%;
+.presentation-container .content h3 {
+    margin: 1rem;
+    font-size: 1.5rem;
 }
 
-.presentation .content h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
+.presentation-container .content p {
+    margin: 1rem;
+    font-size: 1.125rem;
 }
 
 
-/*  Gallerie Section */
+#gallery {
+    background-color: #FFE66D;
+    text-align: center;
+    padding: 2rem 5rem;
+}
+
+
 .frame {
     margin: 1rem auto;
     background-color: #fff2ff;
@@ -192,77 +88,28 @@ h2 {
 
 
 @media only screen and (max-width: 480px) {
-    .header h1 {
-        font-size: 1.5rem;
-    }
 
-    .container {
+    #presentation {
+        text-align: center;
+        padding: 2rem 1rem;
+        background-color: #E7CEF3;
+    }
+    .presentation-container {
         flex-direction: column;
-        align-items: center;
         gap: 2rem;
-   }
-
-   .box {
-        width: 17.5rem;
-   }
-
-   .label h3 {
-        font-size: 1.1rem;
-        line-height: 1.5;
     }
 
-    .actu-events .content h4 {
-        font-size: 0.925rem;
-    }
-    
-    .actu-events .content p {
-        font-size: 0.85rem;
-        
-    }
-
-    .content li {
-        font-size: 1rem;
-    }
-
-    .match-actuality .content h4 {
-        margin: 1rem 0;
-        font-size: 1rem;
-        line-height: 1.2;
-    }
-
-    .match-actuality .content p {
-        font-size: 0.925rem;
-        line-height: 1.3;
-    }
-
-    .presentation-container {
-        flex-direction: column;
-        align-items: center;
-       }
-
-    .presentation-container {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 1rem 2rem;
-    }
-    
-    .presentation-container .image-container  {
-        width: 100%;
-        height: auto;
-    }
-    
-    
-    .presentation .content {
+    .presentation-container img {
+        margin: auto;
         width: 100%;
     }
-    
-    .presentation .content h3 {
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
+
+
+    #gallery {
+        padding: 2rem 1rem;
     }
 
-    .presentation .content p {
-        font-size: 0.925rem;
-        margin-bottom: 0.5rem;
+    .frame {
+        width: 90%;
     }
 }

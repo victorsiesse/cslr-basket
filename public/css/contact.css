@@ -54,13 +54,14 @@ textarea {
 }
 
 .button {
-    background-color: blueviolet;
-    color: White;
+    background-color: #f6c54b;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
 }
 
 #alert-message {
