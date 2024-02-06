@@ -1,16 +1,99 @@
+main {
+    background-color: #E7CEF3;
+    padding-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #work-in-progress {
-    display: block;
+    display: none;
     padding: 2rem 0;
     text-align: center;
     width: 100%;
     height: calc(100vh - 26.5rem);
 }
 
-#events {
-    display: none;
+#page-nav {
+    background-color: #f6c54b;
     text-align: center;
-    padding: 1rem 5rem;
+}
+
+.categorie {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 0.5rem 1rem;
+}
+
+.categorie:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.active {
+    color: white;
+}
+
+.evenements-club, .evenements-plateaux, .evenements-stages {
+    padding: 1rem 2rem;
     background-color: #E7CEF3;
+}
+
+.evenements-plateaux, .evenements-stages {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.33% - 2rem);
+    margin: 1rem;
+}
+
+.horizontal-image {
+    max-width: auto;
+    height: 300px;
+}
+
+.vertical-image {
+    object-fit: contain;
+    background-color: rgb(247, 247, 247);
+    height: 300px;
+    width: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: white;
+}
+
+.content a {
+    color: black;
+    text-decoration: none;
+    background-color: #f6c54b;
+    border: 2px solid #f6c54b;
+    padding: 0.65rem 1.5rem;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+.content a:hover {
+    background-color: white;
+    border: 2px solid #f6c54b;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: calc(50% - 20px);
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -22,4 +105,25 @@
     #work-in-progress h1 {
         font-size: 1.5rem;
     }
+
+    .box {
+        width: 100%;
+    }
+
+    .categorie {
+        font-size: 1rem;
+        display: inline-block;
+        margin: 0.5rem 1rem;
+    } 
+
+    .horizontal-image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .vertical-image {
+        height: 200px;
+    
+    }
 } 
+

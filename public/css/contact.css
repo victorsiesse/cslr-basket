@@ -1,3 +1,9 @@
+main {
+    background-color: #E7CEF3;
+    padding-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #work-in-progress {
     display: none;
     padding: 2rem 0;
@@ -16,8 +22,7 @@ form {
     background-color: #fff;
     width: 40%;
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center; 
 }
 

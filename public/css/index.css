@@ -1,16 +1,43 @@
-#club-info {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem 5rem;
+main {
     background-color: #E7CEF3;
-    text-align: center;
+    padding-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.actualites {
-    width: 40%;
+#page-nav {
+    background-color: #f6c54b;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.categorie {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 0.5rem 1rem;
+}
+
+.categorie:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.active {
+    color: white;
+}
+
+#histoire-content, #matchs-content {
+    display: none;
+}
+
+#actualites {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #E7CEF3;
+    text-align: center;
+    width: 60%;
     background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
 }
 
 .actualites-list {
@@ -22,27 +49,45 @@
 .actualite-item {
     display: flex;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
 }
 
 .actualite-image {
-    max-width: 100%;
-    height: auto;
+    margin: auto 1rem;
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
     border-radius: 4px;
-    margin-right: 20px;
 }
 
 .actualite-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: left;
     width: 100%;
 }
 
+.actualite-content a {
+    padding-top: 0.5rem;
+    color: #f6c54b;
+    text-decoration: none;
+}
+
+.actualite-content a:hover {
+    text-decoration: underline;
+}
+
 .button-container {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
 .access-button {
+    margin-top: 1rem;
     padding: 10px 20px;
     background-color: #f6c54b;
     color: black;
@@ -54,153 +99,70 @@
     background-color: #b99729;
 }
 
-.matchs {
-    width: 40%;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
-}
-
-.sex  {
-    margin: 1rem;
-    text-align: left;
-}
-
-.sex h3 {
-    margin-bottom: 0.5rem;
-}
-
-.sex p {
-    color: #777;
-    margin-left: 0.5rem;
-}
-  
-
-#presentation {
-    text-align: center;
-    padding: 3rem 2rem;
-    background-color: #FFE66D;
-}
-
-.presentation-container {
-    display: flex;
-    gap: 2rem;
-}
-
-.presentation-container img {
-    height: auto;
-    width: 60%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.presentation-container .content {
-    width: 40%;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.presentation-container .content h3 {
-    margin: 1rem;
-    font-size: 1.5rem;
-}
-
-.presentation-container .content p {
-    text-align: left;
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1rem;
-    color: #777;
-}
-
-
-#gallery {
+#partenaires {
     background-color: #E7CEF3;
-    text-align: center;
-    padding: 2rem 5rem;
-}
-
-
-.frame {
-    margin: 1rem auto;
-    background-color: #fff2ff;
-    width: 80%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 30px;
-}
-
-.imageGallery {
-    margin: auto;
     display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.photo {
-    flex: 0 0 100%;
-}
-
-.photo img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.points-container {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    justify-content: center;
+    height: 100px;
 }
 
-.point {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgb(201, 178, 222);
-    margin: 0 5px;
-    cursor: pointer;
+#partenaires img {
+    margin: 0 1rem;
+    height: 50px;
+    width: auto;
 }
 
-.active {
-    background-color: blueviolet;
+article {
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+article h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
 
+article p {
+    margin: 2rem;
+}
+
+  
 @media only screen and (max-width: 480px) {
+    .categorie {
+        font-size: 1rem;
+        display: inline-block;
+        margin: 0.5rem 1rem;
+    }
 
-    #club-info {
+    #partenaires {
         flex-direction: column;
-        padding: 2rem 1rem;
+        height: auto;
         gap: 2rem;
     }
-
-    .actualites, .matchs {
-        width: 90%;
-        margin: 0 auto;
+    
+    #actualites {
+        padding: 1rem auto;
+        width: 70%;
     }
 
-    #presentation {
-        padding: 2rem 1rem;
-    }
-    .presentation-container {
-        flex-direction: column;
-        gap: 2rem;
+    article h1 {
+        font-size: 1.5rem;
     }
 
-    .presentation-container img {
-        margin: auto;
-        width: 100%;
+    article {
+        padding: 1rem;
     }
-
-    .presentation-container .content {
-        width: 100%;
-    }
-
-    #gallery {
-        padding: 2rem 1rem;
-    }
-
-    .frame {
-        width: 90%;
+    article p {
+        margin: 1rem;
     }
 }

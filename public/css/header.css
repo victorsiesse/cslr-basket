@@ -110,8 +110,10 @@ nav h2 {
 }
 
 .nav-footer {
+    width: 100%;
     padding: 1rem 0;
-    border-top: 2px solid white;
+    background-color: rgb(36, 36, 36);
+    border-top: 2px solid #f7ba20;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -126,7 +128,7 @@ nav h2 {
 }
 
 .nav-copyright {
-    color: white;
+    color: #f7ba20;
 }
 
 

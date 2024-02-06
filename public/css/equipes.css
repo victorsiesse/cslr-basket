@@ -1,3 +1,10 @@
+main {
+    background-color: #E7CEF3;
+    padding-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 #work-in-progress {
     display: none;
     padding: 2rem 0;
@@ -11,17 +18,18 @@
     text-align: center;
 }
 
-.page-nav {
+#page-nav {
     background-color: #f6c54b;
+    text-align: center;
 }
 
-.sex {
+.categorie {
     font-size: 1.2rem;
     display: inline-block;
     margin: 0.5rem 1rem;
 }
 
-.sex:hover {
+.categorie:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -51,13 +59,11 @@ section {
 .image-equipe {
     height: 350px;
     width: auto;
-    border-radius: 0.5rem;
 }
 
 .content {
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     height: 350px;
     width: 450px;
     display: flex;
@@ -131,7 +137,7 @@ section {
         font-size: 1.5rem;
     }
 
-    .sex {
+    .categorie {
         font-size: 1rem;
         display: inline-block;
         margin: 0.5rem 1rem;

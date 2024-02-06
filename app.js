@@ -53,7 +53,7 @@ app.post('/contact', (req, res) => {
  });
 
  app.post('/commande', (req, res) => {
-  const { prenom, nom, mail, sujet, modele,taille, couleur} = req.body;
+  const { prenom, nom, mail, type, edition, taille, couleur} = req.body;
 
   const mailOptions = {
     from: 'cslrbasket.noreply@gmail.com',
@@ -64,7 +64,8 @@ app.post('/contact', (req, res) => {
     Nom: ${prenom} ${nom}
     Adresse mail: ${mail}
     
-    Modele : ${modele}
+    Type : ${type}
+    Edition : ${edition}
     Taille : ${taille}
     Couleur : ${couleur}
   `
