@@ -12,17 +12,29 @@ main {
     height: calc(100vh - 26.5rem);
 }
 
+#page-nav {
+    background-color: #f6c54b;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.categorie {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 0.5rem 1rem;
+}
+
+.active {
+    color: white;
+}
+
 #store {
     display: block;
     text-align: center;
-    padding: 1rem 5rem;
+    padding: 0 6rem;
     background-color: #E7CEF3;
 }
 
-.title {
-    color: #333;
-    font-size: 24px;
-}
 
 .container {
     display: flex;
@@ -67,12 +79,17 @@ main {
     padding: 5px;
 }
 
+.size-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .size {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1.3rem;
-    width: 1.3rem;
+    height: 1.4rem;
+    width: 2rem;
     font-size: 0.85rem;
     background-color: black;
     color: white;
@@ -118,14 +135,14 @@ main {
 
 #command-form {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #E7CEF3;
-    padding: 2rem 0;
+    padding: 2rem 7rem;
 }
 
 form {
     background-color: #fff;
-    width: 40%;
+    width: 43%;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -181,7 +198,7 @@ textarea {
 
 #faq {
     background-color: #fff;
-    width: 40%;
+    width: 43%;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -191,7 +208,10 @@ textarea {
     margin: 1rem;
     width: 100%;
     text-align: left;
-    
+}
+
+.question-reponse h3 {
+    width: 90%;
 }
 
 .question-reponse p {

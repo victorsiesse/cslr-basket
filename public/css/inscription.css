@@ -26,6 +26,7 @@ main {
 }
 
 #work-in-progress {
+    display: none;
     line-height: 1.6;
     background-color: #f7f7f7;
     color: #333;
@@ -36,6 +37,41 @@ main {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
+}
+
+article {
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+article h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+article h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+article p {
+    margin:2rem;
+}
+
+.event-details {
+    font-style: italic;
+    color: #555;
 }
 
 @media only screen and (max-width: 480px) {
@@ -53,4 +89,15 @@ main {
         display: inline-block;
         margin: 0.5rem 1rem;
     } 
+
+    article {
+        padding: 1rem;
+    }
+
+    article h1 {
+        font-size: 1.5rem;
+    }
+    article p {
+        margin: 1rem;
+    }
 }
