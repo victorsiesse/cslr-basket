@@ -39,7 +39,7 @@ main {
 }
 
 #equipes-feminines, #equipes-mixtes, #equipes-masculines {
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
     background-color: #E7CEF3;
 }
 
@@ -133,6 +133,10 @@ main {
 
     #work-in-progress h1 {
         font-size: 1.5rem;
+    }
+
+    #equipes-feminines, #equipes-mixtes, #equipes-masculines {
+        padding: 1rem 1rem;
     }
 
     .categorie {

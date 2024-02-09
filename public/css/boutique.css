@@ -138,7 +138,7 @@ main {
     display: flex;
     justify-content: space-between;
     background-color: #E7CEF3;
-    padding: 2rem 7rem;
+    padding: 2rem 6rem;
 }
 
 form {
@@ -237,7 +237,7 @@ textarea {
     #store {
         display: block;
         text-align: center;
-        padding: 1rem 1rem;
+        padding: 0rem 1rem;
         background-color: #E7CEF3;
     }
 
@@ -252,6 +252,8 @@ textarea {
     }
 
     #command-form {
+        padding: 2rem 0rem;
+        margin: 0 auto;
         flex-direction: column;
     }
 
