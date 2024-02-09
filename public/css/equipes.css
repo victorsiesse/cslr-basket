@@ -38,38 +38,44 @@ main {
     color: white;
 }
 
-.equipes-feminines, .equipes-mixtes, .equipes-masculines {
-    padding: 2rem 3rem;
+#equipes-feminines, #equipes-mixtes, #equipes-masculines {
+    padding: 1rem 5rem;
+    background-color: #E7CEF3;
 }
 
-.equipes-mixtes, .equipes-masculines {
+#equipes-mixtes, #equipes-masculines {
     display: none;
 }
 
-.equipes-feminines h2, .equipes-mixtes h2, .equipes-masculines h2 {
-    font-size: 2rem;
-}
-
-section {
-    padding: 3rem 1rem;
+.container {
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.image-equipe {
-    height: 350px;
-    width: auto;
+.box {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 4rem);
+    margin: 0 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.box img {
+    background-color: white;
+    width: 100%;
+    height: auto;
 }
 
 .content {
+    width: 100%;
+    height: auto;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    height: 350px;
-    width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
 }
 
 .label {
@@ -129,64 +135,13 @@ section {
         font-size: 1.5rem;
     }
 
-    .equipes-feminines, .equipes-mixtes, .equipes-masculines {
-        padding: 1rem;
-    }
-
-    .equipes-feminines h2, .equipes-mixtes h2, .equipes-masculines h2 {
-        font-size: 1.5rem;
-    }
-
     .categorie {
         font-size: 1rem;
         display: inline-block;
         margin: 0.5rem 1rem;
     }
 
-    section {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .image-equipe {
-        margin: 1rem auto;
+    .box {
         width: 100%;
-        height: auto;
     }
-
-    .content {
-        margin: 1rem auto;
-        width: 90%;
-        height: auto;
-    }
-
-    .content h3 {
-        font-size: 1rem;
-    }
-    
-    
-    .content h4 {
-        font-size: 0.925rem;
-    }
-    
-    .content p {
-        font-size: 0.85rem;
-    }
-    
-    .content a {
-        font-size:  0.925rem;
-    }
-
-    .line {
-        width: 60px;
-    }
-
-    .mobile {
-        display: block;
-    }
-
-    .desktop {
-        display: none;
-    }
-
 }

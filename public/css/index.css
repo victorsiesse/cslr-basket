@@ -99,6 +99,26 @@ main {
     background-color: #b99729;
 }
 
+#planning {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 70%;
+    text-align: center;
+}
+
+#planning h2 {
+    margin-bottom: 1rem;
+}
+
+#planning img {
+    width: 100%;
+    height: auto;
+}
+
+
 #partenaires {
     background-color: #E7CEF3;
     display: flex;
@@ -143,27 +163,18 @@ article p {
     justify-content: flex-start;
 }
 
-.card {
-    background-color: white;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin: 1rem;
-    padding: 20px;
+.image-container {
+    margin: 0 2rem;
     height: auto;
-    width: calc(50% - 2rem);
-    box-sizing: border-box;
+    width: calc(50% - 4rem);
 }
 
 .image-container img {
     width: 100%;
     height: auto;
-    border-radius: 0.5rem;
-    transition: transform 0.3s ease-in-out; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.image-container img:hover {
-    transform: scale(1.1);
-}
 
 .event-details {
     font-style: italic;
@@ -202,7 +213,7 @@ article p {
         margin: 1rem;
     }
 
-    .card {
+    .image-container {
         margin: 1rem auto;
         width: 100%;
     }

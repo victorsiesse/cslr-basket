@@ -31,7 +31,7 @@ main {
 #store {
     display: block;
     text-align: center;
-    padding: 0 6rem;
+    padding: 0rem 5rem;
     background-color: #E7CEF3;
 }
 
@@ -46,11 +46,12 @@ main {
     background-color: white;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin: 1rem;
     padding: 20px;
     height: auto;
     width: calc(25% - 2rem);
     box-sizing: border-box;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
 }
 
 .image-container img {

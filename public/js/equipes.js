@@ -2,9 +2,9 @@ const feminin = document.getElementById('fem');
 const mixte = document.getElementById('mix');
 const masculin = document.getElementById('mas');
 
-const equipesFeminines = document.getElementsByClassName('equipes-feminines')[0];
-const equipesMixtes = document.getElementsByClassName('equipes-mixtes')[0];
-const equipesMasculines = document.getElementsByClassName('equipes-masculines')[0];
+const equipesFeminines = document.getElementById('equipes-feminines');
+const equipesMixtes = document.getElementById('equipes-mixtes');
+const equipesMasculines = document.getElementById('equipes-masculines');
 
 
 
