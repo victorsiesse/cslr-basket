@@ -65,6 +65,7 @@ main {
 
 .box img {
     background-color: white;
+    padding: 4rem 0;
     width: 100%;
     height: auto;
 }
@@ -118,10 +119,6 @@ main {
 
 .description {
     text-align: left;
-}
-
-.mobile {
-    display: none;
 }
 
 
