@@ -1,11 +1,13 @@
 const club = document.getElementById('club');
-const plateau = document.getElementById('plateau');
-const stage = document.getElementById('stage');
+const plateau = document.getElementById('plateaux');
+const stage = document.getElementById('stages');
 
-const evenementsClub = document.getElementsByClassName('evenements-club')[0];
-const evenementsPlateaux = document.getElementsByClassName('evenements-plateaux')[0];
-const evenementsStages = document.getElementsByClassName('evenements-stages')[0];
+const evenementsClub = document.getElementById('evenements-club');
+const evenementsPlateaux = document.getElementById('evenements-plateaux');
+const evenementsStages = document.getElementById('evenements-stages');
 
+evenementsPlateaux.style.display = 'none';
+evenementsStages.style.display = 'none';
 
 
 club.onclick = function ()  {

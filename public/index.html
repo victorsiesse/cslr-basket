@@ -5,192 +5,130 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="assets/logos/Logo_CSLR.png" type="image/x-icon">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link href="css/header.css" rel="stylesheet" >
-        <link href="css/index.css" rel="stylesheet" >
-        <link href="css/footer.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
         <title>CSLR - Basket</title>
     </head>
     <body>
-        <header>
-            <div class="left-content">
-                <div class="bar"></div>
-                <a href="index.html">LE CLUB</a>
-                <div class="bar"></div>
-                <a href="pages/equipes.html">EQUIPES</a>
-                <div class="bar"></div>
-                <a href="pages/evenements.html">EVENEMENTS</a>
-                <div class="bar"></div>
-            </div>
-
-            <div class="center-content">
-                <div class="burger-menu" id="burger-menu">
-                    <span class="material-symbols-outlined">
-                        menu
-                    </span>
-                </div>
-                <img class="header-logo" src="assets/logos/Logo_header_cslr.png" alt="">
-                <div class="header-social-media">
-                    <a href="#"><img style="width: 20px; height: auto;" src="assets/social_media_kit/Instagram_icon.png" alt=""></a>
-                    <a href="#"><img style="width: 20px; height: auto;" src="assets/social_media_kit/Facebook_icon.png" alt=""></a>
-                </div>
-            </div>
-
-
-            <div class="right-content">
-                <div class="bar"></div>
-                <a  href="pages/boutique.html">BOUTIQUE</a>
-                <div class="bar"></div>
-                <a href="pages/inscription.html">INSCRIPTION</a>
-                <div class="bar"></div>
-                <a  href="pages/contact.html">CONTACT</a>
-                <div class="bar"></div>
-            </div>
-        </header>  
-
         <nav>
-            <div class="nav-menu">
-                <h2>NAVIGATION</h2>
-                <a href="index.html">LE CLUB</a>
-                <a href="pages/equipes.html">EQUIPES</a>
-                <a href="pages/evenements.html">EVENEMENTS</a>
-                <a href="pages/boutique.html">BOUTIQUE</a>
-                <a href="pages/inscription.html">INSCRIPTION</a>
-                <a href="pages/contact.html">CONTACT</a>
+            <div class="nav-items desktop">
+                <a class="active" href="index.html">ACCUEIL</a>
+                <a href="page/club.html">LE CLUB</a>
+                <a href="page/equipes.html">EQUIPES</a>
+                <a href="page/evenements.html">EVENEMENTS</a>
+                <a href="page/boutique.html">BOUTIQUE</a>
+                <a href="page/inscription.html">INSCRIPTION</a>
+                <a href="page/contact.html">CONTACT</a>
             </div>
-                
-
-            <div class="nav-footer">
-                <div class="nav-social-media">
-                    <a href="#"><img style="width: 24px; height: auto;" src="assets/social_media_kit/Instagram_icon.png" alt=""></a>
-                    <a href="#"><img style="width: 24px; height: auto;" src="assets/social_media_kit/Facebook_icon.png" alt=""></a>
-                </div>
-
-                <div class="nav-copyright">
-                    <p>© 2024 - CSLR. Tous droits réservés.</p>
-                </div>    
+            <div class="mobile">
+                <span id="open-nav" class="material-symbols-outlined">
+                    menu
+                </span>
             </div>
-        </nav> 
+            <div class="social-media-links">
+                <a href="#"><img style="width: 24px; height: auto;" src="./assets/social_media_kit/Facebook_icon.png" alt="Logo Facebook"></a>
+                <a href="https://www.instagram.com/cslr_basket/"><img style="width: 24px; height: auto;" src="./assets/social_media_kit/Instagram_icon.png" alt="Logo Instagram"></a>
+            </div>
+        </nav>
+        <div id="menu-nav"> 
+            <span id="close-nav" class="material-symbols-outlined">
+                    close
+            </span>
+            <a class="active" href="index.html">ACCUEIL</a>
+            <a href="page/club.html">LE CLUB</a>
+            <a href="page/equipes.html">EQUIPES</a>
+            <a href="page/evenements.html">EVENEMENTS</a>
+            <a href="page/boutique.html">BOUTIQUE</a>
+            <a href="page/inscription.html">INSCRIPTION</a>
+            <a href="page/contact.html">CONTACT</a>
+            <img style="width: 100px; height: auto;" src="assets/logos/Logo_CSLR.png" alt="">
+          </div>
+        <header>
+            <img class="header-background" src="./assets/header/Header.png" alt="">
+            <img class="logo" src="./assets/header/Logo_CSLR.png" alt="">
+        </header>
 
         <main>
-            <div id="page-nav">
-                <div id="accueil-nav" class="categorie active">Accueil</div>
-                <div id="histoire-nav" class="categorie">Histoire</div>
-                <div id="matchs-nav" class="categorie">Matchs</div>
+            <div id="bandeau">
+                <h1>Bievenue sur le site du CSLR-Basket</h1>
             </div>
 
-            <div id="accueil-content">
-
-                <div id="une">
-
-                </div>
-
-                <div id="actualites">
-                    <h2>Actualités du Club</h2>
-                    <ul class="actualites-list">
-                        <li class="actualite-item">
-                            <img class="actualite-image" src="assets/logos/Logo_CSLR_NY.jpg">
-                            <div class="actualite-content">
-                                <h3>Le Voyage à New-York</h3>
-                                <a href="pages/evenements/New_York_2024.html">Lire l'article</a>
+            <div id="actualites">
+                
+                <div class="flex-container">
+                    <div class="box cinquante">
+                        <h2 class="list-title center">Actualités du club</h2>
+                        <div class="item" onclick="redirigerVersPage('page/evenements/club/New_York_2024.html')">
+                            <img src="assets/evenements/Club/New_York_2024/Miniature.jpg" alt="">
+                            <div class="description">
+                                <h3>Le Voyage à New-York pour les U-15M</h3>
+                                <p>Depuis novembre 2023, nos futurs champions de l'équipe U15 Masculine, accompagnés par les coachs géniaux Yanis et Nassim, ont pris les rênes des buvettes du club pour financer ...</p>
+                                
                             </div>
-                        </li>
-                        <li class="actualite-item">
-                            <img class="actualite-image" src="assets/evenements/Galette/Miniature.png">
-                            <div class="actualite-content">
-                                <h3>La Galette du CSLR</h3>
-                                <a href="pages/evenements/Galette.html">Lire l'article</a>
-                            </div>
-                        </li>
-                        <li class="actualite-item">
-                            <img class="actualite-image" src="assets/evenements/Olympiades_Inclusion_23/Olympiades.png">
-                            <div class="actualite-content">
-                                <h3>Les Olympiades de l'inclusion</h3>
-                                <a href="pages/evenements/Olympiades_2024.html">Lire l'article</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="button-container">
-                        <a href="pages/evenements.html" class="access-button">Voir tous nos Evénements</a>
-                    </div>
-                </div>
-
-                <div id="planning">
-                    <h2>Planning des entrainements</h2>
-                    <img src="assets/logos/Planning_cslr.png" alt="">
-                </div>
-    
-                <div id="partenaires">
-                    <img style="height: 75px;" src="assets/logos/Logo_Lilas.png" alt="">
-                    <img src="assets/logos/Logo_Romainville.png" alt="">
-                    <img src="assets/logos/Logo_Seine_Saint_Denis.png" alt="">
-                    <img style="height: 100px;" src="assets/logos/Logo_Ile_De_France.webp" alt="">
-                    <img style="height: 100px;" src="assets/logos/Logo_Cic.png" alt="">
-                    <img src="assets/logos/Logo_hello_asso.png" alt="">
-                    
-                </div>
-
-                <div id=""></div>
-            </div>
-            
-
-            <div id="histoire-content">
-                <article>
-                    <h1>Histoire et Évolution du CSLR Basket</h1>
-                    <p>En 1941, le Cercle Sportif des Lilas (CS Lilas) est créé par M. Paul PRETET, Secrétaire de la Mairie des Lilas, afin de lutter contre l'occupant pendant la Seconde Guerre mondiale. Initialement un Club Omnisports, il devient Unisport en 1988. Le club est dirigé par les mêmes membres pendant près de 25 ans, avec des activités variées telles que la préparation militaire, la culture physique, la gymnastique, la boxe, le volley, la lutte, le judo, le foot et la natation.</p>
-                    <p>En 1952, la section basket-ball est créée sous la direction de M. Daniel THURMINE. Initialement composée de jeunes filles, elle s'agrandit avec une équipe masculine en 1953. Entre 1956 et 1959, de nombreux membres partent en Algérie pour le service militaire, mais le club persiste.</p>                
-                    <p>En 1960, avec le retour de M. Daniel DUQUESNES, la section basket-ball se développe avec des entraîneurs de haut niveau. En 1998, le club se transforme en CS Lilas Basket et connaît un nouveau souffle sous la direction de Patrick THOMAS et Bernard BOYER. Des objectifs dynamiques sont mis en place, notamment la création d'une structure « École de basket » et le développement de la pratique du basket chez les jeunes.</p>   
-                    <p>En 2013, sous la présidence de Sandrine ROUSELLE, la première présidente féminine du club, une union est formée avec les clubs de Saint Denis US, Basket Club Courneuvien, et CSL Basket, créant la Coopération Territoriale des Clubs « CTC Union Elite » pour améliorer la performance sportive.</p>              
-                    <p>En 2014, une convention est signée avec la ville de Romainville, et en 2016, le club devient le Cercle Sportif Lilas Romainville Basket (CSLR Basket).</p>
-                    <p>Le palmarès du club inclut des succès notables, tels que le titre de Championnes Promotion Excellence Régionale pour les Seniors filles en 1994 et le titre de Champions Régionale (2ème division) pour les Séniors Masculins en 2021-2022.</p>
-                    <p>Les présidents successifs, de 1941 à ce jour, ont contribué à façonner le club, avec Mme Nina RUBINI prenant la tête en juin 2022. L'histoire du CS Lilas Basket témoigne de son engagement dans le sport et son évolution au fil des décennies.</p>
-                </article>
-            </div>
-
-            <div id="matchs-content">
-                <article>
-                    <h1>Résultats et Matchs à venir</h1>
-                    <p>Nous sommes ravis de pouvoir partager avec vous les résultats de nos matchs du dernier weekend. Nos équipes se battent pour démontrer de bonnes performances, et nous sommes fiers de tous nos joueurs.</p>
-
-                    <div class="container">                  
-                        <div class="image-container">
-                            <img src="assets/matchs/Résultat des matchs Noir.jpg" alt="">
                         </div>
 
-                        <div class="image-container">
-                            <img src="assets/matchs/Résultat des matchs Noir.jpg" alt="">
+                        <div class="item" onclick="redirigerVersPage('page/evenements/club/galette_2024.html')">
+                            <img src="assets/evenements/Club/Galette_2024/Miniature.png" alt="">
+                            <div class="description">
+                                <h3>La Galette des rois du CSLR 2024</h3>
+                                <p>Le vendredi 26 janvier 2024, le Cercle Sportif Lilas Romainville Basket a organisé un événement exceptionnel à l'occasion de la galette des rois. L'événement ...</p>
+                            </div>
                         </div>
+
+                        <div class="item" onclick="redirigerVersPage('page/evenements/club/Olympiades_2024.html')">
+                            <img src="assets/evenements/Club/Olympiades_Inclusion_23/Miniature.png" alt="">
+                            <div class="description">
+                                <h3>Les Olypiades de L'inclusion</h3>
+                                <p>Le samedi 13 janvier 2024, le club a uni ses forces avec la ville des Lilas pour organiser les Olympiades de l'inclusion au gymnase Rabeyrolles. Une journée ...</p>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="box cinquante">
+                        <h2 class="list-title center" >Planning des Entrainements</h2>
+                        <img id="planning" src="assets/logos/Planning_cslr.png" alt="">
                     </div>
+                </div>
+            </div>
+
+            <div style="display: none;" id="matchs">
+                <article>
+                    <h2>Actualités des matchs</h2>
+                
+                    <p>Nous sommes ravis de pouvoir partager avec vous les résultats de nos matchs du dernier weekend. Nos équipes se battent pour démontrer de bonnes performances, et nous sommes fiers de tous nos joueurs.</p>        
+
                     <p>Pensez à vous préparer pour les matchs de la semaine prochaine, afin de venir soutenir nos équipes qui sont prêtes à relever de nouveaux défis !</p>
-                    
-                    <div class="container">                  
-                        <div class="image-container">
-                            <img src="assets/matchs/Match à domicile Insta.jpg" alt="">
-                        </div>
 
-                        <div class="image-container">
-                            <img src="assets/matchs/Match à l'extérieur Insta.jpg" alt="">
-                        </div>
-                    </div>
                     <p>Restez connectés pour les mises à jour hebdomadaires, et n'oubliez pas de venir encourager nos équipes lors de ces matchs cruciaux. Ensemble, nous formons une communauté passionnée qui soutient nos joueurs à chaque matchs !</p>
                     <p class="event-details">L'équipe du CSLR Basket</p>
                 </article>
+                
+            </div>
+
+            <div id="partenariat">
+                <img style="height: 75px;" src="./assets/partenaires/Logo_Lilas.png" alt="">
+                <img src="./assets/partenaires/Logo_Romainville.png" alt="">
+                <img src="./assets/partenaires/Logo_Seine_Saint_Denis.png" alt="">
+                <img style="height: 100px;" src="./assets/partenaires/Logo_Ile_De_France.webp" alt="">
+                <img style="height: 100px;" src="./assets/partenaires/Logo_Cic.png" alt="">
+                <img src="./assets/partenaires/Logo_hello_asso.png" alt="">            
             </div>
         </main>
-        
+
         <footer>
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img style="width: auto; height: 100px;" src="assets/logos/Logo_CSLR.png" alt="">
-                    <img style="width: auto; height: 80px;" src="assets/logos/Logo_FFBB.png" alt="">
+                    <img style="width: auto; height: 100px;" src="./assets/logos/Logo_CSLR.png" alt="">
+                    <img style="width: auto; height: 80px;" src="./assets/logos/Logo_FFBB.png" alt="">
                 </div>
                 <div class="footer-links">
                     <h4>NAVIGATION</h4>
-                    <a href="index.html">LE CLUB</a>
-                    <a href="pages/equipes.html">EQUIPES</a>
-                    <a href="pages/evenements.html">EVENEMENTS</a>
-                    <a href="pages/boutique.html">BOUTIQUE</a>
-                    <a href="pages/inscription.html">INSCRIPTION</a>
-                    <a href="pages/contact.html">CONTACT</a>
+                    <a href="index.html">ACCUEIL</a>
+                    <a href="club.html">LE CLUB</a>
+                    <a href="equipes.html">EQUIPES</a>
+                    <a href="evenements.html">EVENEMENTS</a>
+                    <a href="boutique.html">BOUTIQUE</a>
+                    <a href="inscription.html">INSCRIPTION</a>
+                    <a href="contact.html">CONTACT</a>
                 </div>
                 <div class="footer-contact">
                     <h4>CONTACT</h4>
@@ -206,8 +144,8 @@
                     <p>France</p>
                 </div>
                 <div class="footer-social-media">
-                    <a href="#"><img style="width: 24px; height: auto;" src="assets/social_media_kit/Instagram_icon.png" alt=""></a>
-                    <a href="#"><img style="width: 24px; height: auto;" src="assets/social_media_kit/Facebook_icon.png" alt=""></a>
+                    <a href="#"><img style="width: 24px; height: auto;" src="./assets/social_media_kit/Facebook_icon.png" alt=""></a>
+                    <a href="https://www.instagram.com/cslr_basket/"><img style="width: 24px; height: auto;" src="./assets/social_media_kit/Instagram_icon.png" alt=""></a>
                 </div>
             </div>
 
@@ -215,7 +153,11 @@
                 <p>© 2024 - CSLR. Tous droits réservés.</p>
             </div>
         </footer>
-        <script src="js/header.js"></script>
-        <script src="js/index.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            function redirigerVersPage(url) {
+                window.location.href = url;
+            }
+        </script>
     </body>
 </html>
