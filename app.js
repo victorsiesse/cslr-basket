@@ -6,12 +6,15 @@ const nodemailer = require('nodemailer');
 const app = express();
 const port = process.env.PORT;
 const mailPassword = process.env.MAIL_PASSWORD;
+const noreplyMail = process.env.NO_REPLY_MAIL;
+const contactMail = process.env.CONTACT_MAIL;
+const commandeMail =process.env.COMMANDE_MAIL;
 
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'cslrbasket.noreply@gmail.com',
+      user: noreplyMail,
       pass: mailPassword,
     },
   });
@@ -29,8 +32,8 @@ app.post('/contact', (req, res) => {
     const { firstname, lastname, mail, subject, message } = req.body;
   
     const mailOptions = {
-      from: 'cslrbasket.noreply@gmail.com',
-      to: 'cslrbasket.contact@gmail.com', 
+      from: noreplyMail,
+      to: contactMail, 
       subject: `Message de ${firstname} ${lastname}: ${subject}`,
 
       text: `
@@ -56,8 +59,8 @@ app.post('/contact', (req, res) => {
   const { prenom, nom, mail, type, edition, taille, couleur} = req.body;
 
   const mailOptions = {
-    from: 'cslrbasket.noreply@gmail.com',
-    to: 'cslrbasket.commande@gmail.com', 
+    from: noreplyMail,
+    to: commandeMail, 
     subject: `Message de ${prenom} ${nom}: Commande`,
 
     text: `
