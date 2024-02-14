@@ -198,6 +198,11 @@ main {
     transition: ease-in-out 0.3s;
 }
 
+.box h3 {
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
 .box a:hover {
     background-color: #6E5494;
     color: #f6c54b;
@@ -386,7 +391,7 @@ textarea {
 }
 /* Boutique */
 .edition {
-
+    margin: 0;
     color: gray;
 }
 
